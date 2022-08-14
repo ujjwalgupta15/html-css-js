@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* universal selector */
+        *{
+            background-color: rgb(94, 76, 76);
+        }
+        p{
+            color: red;
+        }
+        div{
+            color: aqua;
+        }
+        .textpink{
+            color: aqua;
+        }
+        .largetext{
+            font-size: 30px;
+        }
+        .textpink.largetext{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        .textpink{
+            color: blueviolet;
+        }
+        #unique{
+            font-size: 40px;
+        }
+        h4, a, h3{
+            color: rgb(255, 127, 238);
+        }
+        /*descendant selector*/
+        div p span{
+            color:rgb(25, 247, 247)
+        }
+        /*children selector*/
+        div>p>span{
+            color: aquamarine;
+        }
+        
+        a[target="_blank"]{
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <!--SIMPLE SELECTOR:
+         1.element selector 
+         2.class selector
+         3.id selector
+         4.universal selector
+         5.grouping selector-->
+
+    <h1>element selector</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam, aut vel sed suscipit distinctio dolore perspiciatis at corporis repellat omnis error quos placeat assumenda porro culpa laborum iure? Est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore autem quam iusto quibusdam a. Quisquam excepturi mollitia nesciunt ipsa temporibus hic. Magnam delectus vero modi provident, sit omnis quidem! Atque.</p>     
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur similique vitae neque, totam corrupti sapiente doloribus ipsum sed, facilis libero consequatur reprehenderit commodi ab obcaecati modi, cum dignissimos. Accusantium, asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, in nobis tenetur quis illo aperiam omnis quod dicta deleniti ullam repellendus enim ex iste distinctio quae adipisci ratione nulla iusto.</p>
+
+    <div>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum maiores libero illum suscipit facilis eum, praesentium quia tempore minima quas dolor vero ipsa consectetur dicta ex qui. Nostrum, facere nobis?</p>
+    </div>
+    <h1>class selector</h1>
+    <p class="textpink largetext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque cumque, expedita autem, nam alias, consequatur tempore accusamus delectus sed in ipsam! Sint harum accusamus obcaecati, corrupti facere minus blanditiis facilis.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, veritatis ipsam optio veniam iure eum neque fuga minima rem. Dolor quis, illo nostrum dolorum maiores expedita asperiores dolore sed consequatur.</p>
+
+    <p class="textpink">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, minima iure amet aliquid architecto possimus impedit natus doloremque consectetur autem placeat nam commodi corporis, officiis ad sunt excepturi deserunt. Minima!</p>
+
+    <h1>id selector</h1>
+    <p class="textred" id="unique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, harum dicta sapiente voluptates impedit consequatur ut repellat veniam quasi laborum fugiat rem hic doloremque saepe nisi minima perspiciatis. Sint, non!</p>
+    
+    <!-- grouping selector -->
+    <h3>i am h1</h3>
+    <a href="https//www.google.com" target="_blank">google</a>
+    <h4>i am h3</h4>
+
+    <!-- combinators selector
+     1.descendant selector -->
+     <div>
+        <p>
+            <span>I am direct child</span>
+        </p>
+     </div>
+     <div>
+            <span>
+                <p>
+                    <span>I am a indirect child </span>
+                </p>
+            </span>
+     </div>
+     <!-- Attribute selecor -->
+     <a href="https:www.google.com" target="_blank">Google</a>
+     <a href="https:www.facebook.com" target="_blank">facebook</a>
+     <a href="https:www.netflix.com" target="_blank">netflix</a>
+
+
+
+</body>
+</html>
